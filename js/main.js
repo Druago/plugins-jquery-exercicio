@@ -14,11 +14,11 @@ $(document).ready(function(){
         $('form').validate({
             rules:{
                 nome:{
-                    required: true
+                    required: true,
                 },
                 email:{
                     required: true,
-                    email: true
+                    email: true,
                 },
                 telefone:{
                     required: true
@@ -31,7 +31,10 @@ $(document).ready(function(){
                 }
             },
             messages:{
-                nome: 'Por favor, insira o seu nome'
+                nome: 'Por favor, insira o seu nome',
+                email: 'Por favor, insira um e-mail válido',
+                telefone: 'Por favor, insira o seu telefone',
+                mensagem: 'Por favor, insira uma mensagem'
             },
             submitHandler: function(form){
                 console.log(form)
